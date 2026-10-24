@@ -41,6 +41,8 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
+#stores{width:100%}
 :root{padding-bottom:env(safe-area-inset-bottom,0px)}
 html{-webkit-text-size-adjust:100%}
 html,body{background:var(--bg)}
@@ -183,7 +185,7 @@ canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-in
       <textarea id="pasteTxt" placeholder="Wklej tu skopiowaną listę"></textarea>
       <div class="erow"><button class="btn" id="pCancel">Anuluj</button><button class="btn" id="pLoad" style="background:var(--accent);color:var(--accent-ink)">Wczytaj</button></div>
     </div>
-    <div class="sync ok" id="sync"><i></i><span>Zapisane w tym telefonie</span></div>
+    <div class="sync ok" id="sync"><i></i><span>Zapisane na tym urządzeniu</span></div>
   </div>
 </div>
 <div class="toast" id="toast" role="status"><span id="toastTxt"></span><button id="undo">Cofnij</button></div>
